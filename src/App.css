@@ -1,10 +1,10 @@
 .App {
   background-color: #fff;
-  width: 1000px;
+  max-width: 1000px;
   margin: 20px auto;
   border-radius: 6px;
 }
-h1 {
+.App h1 {
   font-family: "Kameron", serif;
   font-weight: 400;
   text-align: center;
