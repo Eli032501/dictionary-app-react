@@ -4,12 +4,7 @@
   margin: 20px auto;
   border-radius: 6px;
 }
-.App h1 {
-  font-family: "Kameron", serif;
-  font-weight: 400;
-  text-align: center;
-  font-size: 72px;
-}
+
 .App footer p {
   color: #fff;
   text-align: center;

@@ -1,0 +1,16 @@
+.Dictionary form .bar-search {
+  border: none;
+  border-bottom: solid 1.5px #11a176;
+  background-color: #3a3f3d1a;
+  border-radius: 2px;
+  padding: 2px 8px;
+  width: 71%;
+}
+.Dictionary form .btn-submit {
+  background-color: #11a176;
+  border: 2px solid #11a176;
+  border-radius: 2px;
+  color: #fff;
+
+  width: 28%;
+}

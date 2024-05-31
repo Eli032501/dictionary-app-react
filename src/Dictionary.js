@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Results from "./Results";
+import "./Dictionary.css";
 
 export default function Dictionary() {
   let [word, setWord] = useState("");
+  let [results, setResults] = useState(null);
 
   function handleResponse(response) {
-    console.log(response.data[0]);
+    setResults(response.data[0]);
   }
 
   function handleSubmit(event) {
@@ -20,20 +23,14 @@ export default function Dictionary() {
   }
   return (
     <div className="Dictionary">
-      <form className="row mb-5" onSubmit={handleSubmit}>
-        <div className="col-6"></div>
-        <div className="col-4">
-          <input className="w-75" type="text" onChange={handleUpdate} />
-          <input className="w-25" type="submit" value="Search" />
+      <form className="row mb-4" onSubmit={handleSubmit}>
+        <div className="col-8"></div>
+        <div className="col-4 row justify-content-between">
+          <input className=" bar-search" type="text" onChange={handleUpdate} />
+          <input className=" btn-submit" type="submit" value="search" />
         </div>
-        <div className="col-2"></div>
       </form>
-      <h1>Dictionary</h1>
-      <div className="row ">
-        <div className="col-6"></div>
-        <p className="col-4">what word do you want to look up?</p>
-        <div className="col-2"></div>
-      </div>
+      <Results results={results} />
     </div>
   );
 }

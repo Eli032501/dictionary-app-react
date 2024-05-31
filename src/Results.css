@@ -1,0 +1,43 @@
+.Results h1,
+.Results h2 {
+  font-family: "Kameron", serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 72px;
+  line-height: 1;
+}
+
+.Results .line-decoration {
+  border-bottom: solid 1.5px #11a176;
+}
+
+.Results p.phonetic {
+  color: rgba(54, 102, 90, 0.828);
+  text-align: end;
+  font-size: 18px;
+  padding-right: 4px;
+}
+
+.Results .Meaning h3 {
+  font-family: "Kameron", serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.4;
+  color: #11a176;
+  margin-top: 20px;
+}
+
+.Results .Meaning div.container-definition {
+  margin-left: 12px;
+}
+.Results .Meaning .container-definition p.definition {
+  line-height: 1.2;
+  margin: 8px 0 0;
+}
+.Results .Meaning .container-definition p.example {
+  margin-top: 4px;
+  margin-left: 10px;
+  opacity: 0.8;
+  font-style: italic;
+  font-size: 14px;
+}
