@@ -4,7 +4,6 @@ import Meaning from "./Meaning";
 
 export default function Results({ results }) {
   if (results) {
-    console.log(results);
     return (
       <div className="Results">
         <div className="row">

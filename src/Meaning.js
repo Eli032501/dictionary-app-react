@@ -7,7 +7,7 @@ export default function Meaning({ meanings }) {
       {meanings.definitions.map(function (definitions, index) {
         return (
           <div className="container-definition" key={index}>
-            <p className="definition ">. {definitions.definition}</p>
+            <p className="definition ">{definitions.definition}</p>
 
             <p className="example">{definitions.example}</p>
           </div>
