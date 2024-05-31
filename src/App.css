@@ -1,4 +1,4 @@
-.App {
+.App .app-container {
   background-color: #fff;
   max-width: 1000px;
   margin: 20px auto;
@@ -9,4 +9,13 @@
   font-weight: 400;
   text-align: center;
   font-size: 72px;
+}
+.App footer p {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+}
+.App footer p a {
+  color: rgb(115, 227, 199);
 }

@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Dictionary() {
+  let [word, setWord] = useState("");
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    alert(`Searching ${word} definition`);
+  }
+
+  function handleUpdate(event) {
+    setWord(event.target.value);
+  }
   return (
     <div className="Dictionary">
-      <form className="row mb-5">
+      <form className="row mb-5" onSubmit={handleSubmit}>
         <div className="col-6"></div>
         <div className="col-4">
-          <input className="w-75" type="text" />
+          <input className="w-75" type="text" onChange={handleUpdate} />
           <input className="w-25" type="submit" value="Search" />
         </div>
         <div className="col-2"></div>

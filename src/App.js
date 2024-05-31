@@ -3,10 +3,11 @@ import Dictionary from "./Dictionary";
 
 function App() {
   return (
-    <div className="App py-5">
-      <Dictionary />
-
-      <fotter>
+    <div className="App ">
+      <div className="app-container py-5">
+        <Dictionary />
+      </div>
+      <footer>
         <p className="footer-text">
           This project was coded by{" "}
           <a
@@ -33,7 +34,7 @@ function App() {
             Netlify
           </a>
         </p>
-      </fotter>
+      </footer>
     </div>
   );
 }
