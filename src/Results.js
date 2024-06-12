@@ -26,12 +26,10 @@ export default function Results({ results }) {
     );
   } else {
     return (
-      <div className="Results">
-        <h1>Dictionary</h1>
-        <div className="row ">
-          <div className="col-6"></div>
-          <p className="col-4">what word do you want to look up?</p>
-          <div className="col-2"></div>
+      <div className="Results d-flex justify-content-center">
+        <div>
+          <h1>Dictionary</h1>
+          <p className="text-intro">what word do you want to look up?</p>
         </div>
       </div>
     );

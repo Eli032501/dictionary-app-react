@@ -4,12 +4,12 @@ import Dictionary from "./Dictionary";
 function App() {
   return (
     <div className="App ">
-      <div className="app-container p-5">
+      <div className="app-container ">
         <Dictionary />
       </div>
       <footer>
         <p className="footer-text">
-          This project was coded by{" "}
+          Coded by{" "}
           <a
             href="https://github.com/Eli032501"
             target="_blank"

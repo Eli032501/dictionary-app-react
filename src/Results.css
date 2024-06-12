@@ -2,7 +2,7 @@
 .Results h2 {
   font-family: "Kameron", serif;
   font-weight: 400;
-  text-align: center;
+
   font-size: 72px;
   line-height: 1;
 }
@@ -40,4 +40,13 @@
   opacity: 0.8;
   font-style: italic;
   font-size: 14px;
+}
+@media (max-width: 600px) {
+  .Results h1,
+  .Results h2 {
+    font-size: 52px;
+  }
+  .Results .text-intro {
+    font-size: 14px;
+  }
 }

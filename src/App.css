@@ -2,6 +2,7 @@
   background-color: #fff;
   max-width: 1000px;
   margin: 20px auto;
+  padding: 36px;
   border-radius: 6px;
 }
 
@@ -13,4 +14,14 @@
 }
 .App footer p a {
   color: rgb(115, 227, 199);
+}
+
+@media (max-width: 600px) {
+  .App .app-container {
+    margin: 10px auto;
+    padding: 28px;
+  }
+  .App footer p {
+    font-size: 10px;
+  }
 }
