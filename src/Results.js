@@ -7,8 +7,8 @@ export default function Results({ results }) {
     return (
       <div className="Results">
         <div className="row">
-          <div className="col-7">
-            <h2 className="text-end">{results.word}</h2>
+          <div className="col col-md-7">
+            <h2>{results.word}</h2>
             <p className="line-decoration phonetic">
               {results.phonetics[0].text}
             </p>
@@ -20,7 +20,7 @@ export default function Results({ results }) {
               );
             })}
           </div>
-          <div className="col-5"></div>
+          <div className="d-none d-md-block col-5"></div>
         </div>
       </div>
     );

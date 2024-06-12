@@ -16,7 +16,7 @@
   color: rgb(115, 227, 199);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   .App .app-container {
     margin: 10px auto;
     padding: 28px;

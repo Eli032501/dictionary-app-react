@@ -18,3 +18,9 @@
 
   width: 30%;
 }
+@media (max-width: 576px) {
+  .Dictionary form {
+    padding: 0px 20px;
+    font-size: 14px;
+  }
+}

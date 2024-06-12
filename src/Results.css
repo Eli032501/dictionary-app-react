@@ -2,11 +2,12 @@
 .Results h2 {
   font-family: "Kameron", serif;
   font-weight: 400;
-
   font-size: 72px;
   line-height: 1;
 }
-
+.Results h2 {
+  text-align: end;
+}
 .Results .line-decoration {
   border-bottom: solid 1.5px #11a176;
 }
@@ -41,12 +42,19 @@
   font-style: italic;
   font-size: 14px;
 }
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   .Results h1,
   .Results h2 {
     font-size: 52px;
+    text-align: center;
   }
   .Results .text-intro {
     font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .Results p.phonetic,
+  .Results h2 {
+    text-align: start;
   }
 }
