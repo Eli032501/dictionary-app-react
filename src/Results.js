@@ -8,20 +8,19 @@ export default function Results({ results }) {
       <div className="Results">
         <div className="row">
           <div className="col col-md-7">
-            <h2>{results.word}</h2>
-            <p className="line-decoration phonetic">
+            <h2 className="">{results.word}</h2>
+            <p className="line-decoration phonetic ">
               {results.phonetics[0].text}
             </p>
-            {results.meanings.map(function (meanings, index) {
-              return (
-                <div key={index}>
-                  <Meaning meanings={meanings} />
-                </div>
-              );
-            })}
           </div>
-          <div className="d-none d-md-block col-5"></div>
         </div>
+        {results.meanings.map(function (meanings, index) {
+          return (
+            <div key={index}>
+              <Meaning meanings={meanings} />
+            </div>
+          );
+        })}
       </div>
     );
   } else {
