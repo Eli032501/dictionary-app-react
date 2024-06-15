@@ -12,13 +12,19 @@
   border-bottom: solid 1.5px #11a176;
 }
 
-.Results p.phonetic {
-  color: rgba(54, 102, 90, 0.828);
-  text-align: end;
-  font-size: 18px;
+.Results span.phonetic {
+  float: inline-end;
+
   padding-right: 4px;
 }
-
+.Results span.phonetic a {
+  color: #79817e;
+  font-size: 18px;
+  margin-left: 4px;
+}
+.Results span.phonetic a:hover {
+  color: #11a176;
+}
 .Results .Meaning h3 {
   font-family: "Kameron", serif;
   font-weight: 400;
@@ -51,9 +57,15 @@
   .Results .text-intro {
     font-size: 14px;
   }
+  .Results span.phonetic a {
+    font-size: 15px;
+  }
 }
 @media (max-width: 768px) {
-  .Results p.phonetic,
+  .Results span.phonetic {
+    float: inline-start;
+  }
+
   .Results h2 {
     text-align: start;
   }

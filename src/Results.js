@@ -1,17 +1,22 @@
 import React from "react";
 import "./Results.css";
 import Meaning from "./Meaning";
+import Phonetics from "./Phonetics";
 
 export default function Results({ results }) {
   if (results) {
     return (
       <div className="Results">
-        <div className="row">
-          <div className="col col-md-7">
+        <div className="row ">
+          <div className="col col-md-7 line-decoration">
             <h2 className="">{results.word}</h2>
-            <p className="line-decoration phonetic ">
-              {results.phonetics[0].text}
-            </p>
+            {results.phonetics.map(function (phonetic, index) {
+              return (
+                <span className=" phonetic " key={index}>
+                  <Phonetics phonetic={phonetic} />
+                </span>
+              );
+            })}
           </div>
         </div>
         {results.meanings.map(function (meanings, index) {
