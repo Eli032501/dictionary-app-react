@@ -8,14 +8,13 @@ export default function Meaning({ meanings }) {
       {meanings.definitions.map(function (definitions, index) {
         return (
           <span className="row">
-            <div className=" col col-md-7" key={index}>
+            <div className="container-definition col col-md-7" key={index}>
               <p className="definition ">{definitions.definition}</p>
               <p className="example">{definitions.example}</p>
-            </div>
-            <div className="d-none d-lg-block col-lg-1 "></div>
-            <div className="d-none d-md-block col-md-4 col-lg-3 px-1 text-end">
               <Synonyms synonyms={definitions.synonyms} />
             </div>
+            <div className="d-none d-lg-block col-lg-1 "></div>
+            <div className="d-none d-md-block col-md-4 col-lg-3 px-1 text-end"></div>
           </span>
         );
       })}
