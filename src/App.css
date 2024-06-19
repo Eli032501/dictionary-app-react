@@ -4,6 +4,7 @@
   margin: 20px auto;
   padding: 36px;
   border-radius: 6px;
+  box-shadow: -3px 3px 12px rgba(115, 227, 199, 0.613);
 }
 
 .App footer p {

@@ -18,9 +18,17 @@
 
   width: 30%;
 }
+.Dictionary form .hints-search {
+  padding: 0;
+  margin-top: 4px;
+  font-size: 12px;
+  font-weight: 300;
+  opacity: 0.8;
+}
 @media (max-width: 576px) {
   .Dictionary form {
     padding: 0px 20px;
     font-size: 14px;
+    margin-bottom: 28px;
   }
 }

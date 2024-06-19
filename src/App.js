@@ -1,3 +1,5 @@
+import React from "react";
+
 import "./App.css";
 import Dictionary from "./Dictionary";
 
@@ -5,7 +7,7 @@ function App() {
   return (
     <div className="App ">
       <div className="app-container ">
-        <Dictionary />
+        <Dictionary defaultWord="sunset" />
       </div>
       <footer>
         <p className="footer-text">
