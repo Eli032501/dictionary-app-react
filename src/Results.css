@@ -39,15 +39,19 @@
   margin-bottom: 0px;
 }
 
-.Results .Meaning div.container-definition {
-  margin-left: 8px;
+.Results .Meaning ul.container-definition {
+  margin-left: 24px;
+  list-style-type: disc;
+  margin-bottom: 0;
 }
-.Results .Meaning .container-definition p.definition {
-  line-height: 1.2;
-  margin-top: 8px;
+li::marker {
+  color: #11a176;
+}
+.Results .Meaning .container-definition li.definition {
+  margin-top: 10px;
+  margin-bottom: 3px;
 }
 .Results .Meaning .container-definition p.example {
-  margin-top: 3px;
   margin-left: 10px;
   opacity: 0.9;
   font-style: italic;
