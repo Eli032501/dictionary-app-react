@@ -2,8 +2,9 @@ import React from "react";
 import "./Results.css";
 import Meaning from "./Meaning";
 import Phonetics from "./Phonetics";
+import Photos from "./Photos";
 
-export default function Results({ results }) {
+export default function Results({ results }, { photos }) {
   if (results) {
     return (
       <div className="Results">
@@ -26,6 +27,7 @@ export default function Results({ results }) {
             </div>
           );
         })}
+        <Photos photos={photos} />
       </div>
     );
   } else {
