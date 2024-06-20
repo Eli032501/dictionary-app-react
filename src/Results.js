@@ -2,35 +2,30 @@ import React from "react";
 import "./Results.css";
 import Meaning from "./Meaning";
 import Phonetics from "./Phonetics";
-import Photos from "./Photos";
 
-export default function Results({ results }, { photos }) {
+export default function Results({ results }) {
   if (results) {
     return (
-      <div className="Results">
-        <div className="row ">
-          <div className="col col-md-7 line-decoration">
-            <h2 className="">{results.word}</h2>
-            {results.phonetics.map(function (phonetic, index) {
-              return (
-                <span className=" phonetic " key={index}>
-                  <Phonetics phonetic={phonetic} />
-                </span>
-              );
-            })}
-          </div>
+      <div className="Results col-12 col-md-7">
+        <div className=" line-decoration">
+          <h2 className="">{results.word}</h2>
+          {results.phonetics.map(function (phonetic, index) {
+            return (
+              <span className=" phonetic " key={index}>
+                <Phonetics phonetic={phonetic} />
+              </span>
+            );
+          })}
         </div>
-        <div className="row">
-          <div className="col-12 col-md-7">
-            {results.meanings.map(function (meanings, index) {
-              return (
-                <div key={index}>
-                  <Meaning meanings={meanings} />
-                </div>
-              );
-            })}
-          </div>
-          <Photos photos={photos} />
+
+        <div className="">
+          {results.meanings.map(function (meanings, index) {
+            return (
+              <div key={index}>
+                <Meaning meanings={meanings} />
+              </div>
+            );
+          })}
         </div>
       </div>
     );

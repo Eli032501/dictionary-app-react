@@ -12,7 +12,7 @@
 .Results h2 {
   text-align: end;
 }
-.Results .line-decoration {
+.Results div.line-decoration {
   border-bottom: solid 1.5px #11a176;
 }
 
