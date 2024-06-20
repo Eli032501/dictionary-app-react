@@ -30,6 +30,7 @@
   margin-left: 24px;
   list-style-type: disc;
   margin-bottom: 0;
+  padding-right: 26px;
 }
 li::marker {
   color: #11a176;

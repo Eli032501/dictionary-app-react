@@ -21,7 +21,7 @@ export default function Results({ results }, { photos }) {
           </div>
         </div>
         <div className="row">
-          <div className="col col-md-7">
+          <div className="col-12 col-md-7">
             {results.meanings.map(function (meanings, index) {
               return (
                 <div key={index}>

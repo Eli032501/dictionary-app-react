@@ -8,7 +8,7 @@ export default function Meaning({ meanings }) {
       {meanings.definitions.map(function (definitions, index) {
         return (
           <span className="row" key={index}>
-            <ul className="container-definition col-12 col-md-7">
+            <ul className="container-definition">
               <li className="definition ">{definitions.definition}</li>
               <p className="example">{definitions.example}</p>
               <Synonyms synonyms={definitions.synonyms} />
