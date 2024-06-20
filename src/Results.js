@@ -20,14 +20,18 @@ export default function Results({ results }, { photos }) {
             })}
           </div>
         </div>
-        {results.meanings.map(function (meanings, index) {
-          return (
-            <div key={index}>
-              <Meaning meanings={meanings} />
-            </div>
-          );
-        })}
-        <Photos photos={photos} />
+        <div className="row">
+          <div className="col col-md-7">
+            {results.meanings.map(function (meanings, index) {
+              return (
+                <div key={index}>
+                  <Meaning meanings={meanings} />
+                </div>
+              );
+            })}
+          </div>
+          <Photos photos={photos} />
+        </div>
       </div>
     );
   } else {
