@@ -59,7 +59,7 @@ export default function Dictionary({ defaultWord }) {
             />
             <input className=" btn-submit" type="submit" value="search" />
             <div className="hints-search">
-              words suggested: sunset, wine, yoga
+              words suggested: destiny, sick, animal
             </div>
           </div>
         </form>
