@@ -42,7 +42,7 @@ export default function Dictionary() {
 
   return (
     <div className="Dictionary">
-      <form className="  " onSubmit={handleSubmit}>
+      <form className=" form-search " onSubmit={handleSubmit}>
         <div className="d-none d-sm-block  col-sm-6 col-md-8"></div>
         <div className="col col-sm-6 col-md-4 row justify-content-between">
           <input className=" bar-search" type="text" onChange={handleUpdate} />
