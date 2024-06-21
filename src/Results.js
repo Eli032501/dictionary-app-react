@@ -9,13 +9,15 @@ export default function Results({ results }) {
       <div className="Results col-12 col-md-6">
         <div className=" line-decoration">
           <h2 className="">{results.word}</h2>
-          {results.phonetics.map(function (phonetic, index) {
-            return (
-              <span className=" phonetic " key={index}>
-                <Phonetics phonetic={phonetic} />
-              </span>
-            );
-          })}
+          <div className="group-phonetic ">
+            {results.phonetics.map(function (phonetic, index) {
+              return (
+                <span className=" phonetic " key={index}>
+                  <Phonetics phonetic={phonetic} />
+                </span>
+              );
+            })}
+          </div>
         </div>
 
         <div className="">

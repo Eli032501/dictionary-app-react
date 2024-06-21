@@ -1,7 +1,4 @@
 span.Phonetics {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
   font-size: 18px;
   margin-bottom: 6px;
   margin-right: 10px;
@@ -25,7 +22,6 @@ span.Phonetics a:hover {
 }
 @media (max-width: 768px) {
   span.Phonetics {
-    justify-content: start;
     margin-left: 4px;
   }
 }

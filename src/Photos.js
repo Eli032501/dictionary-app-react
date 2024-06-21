@@ -8,11 +8,13 @@ export default function Photos({ photos }) {
         {photos.map(function (photo, index) {
           return (
             <figure key={index}>
-              <img
-                src={photo.src.landscape}
-                className="img-fluid"
-                alt={photo.photographer}
-              />
+              <a href={photo.src.original} target="_blank" rel="noreferrer">
+                <img
+                  src={photo.src.landscape}
+                  className="img-fluid"
+                  alt={photo.photographer}
+                />
+              </a>
             </figure>
           );
         })}

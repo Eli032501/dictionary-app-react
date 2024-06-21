@@ -11,6 +11,7 @@
   max-width: 200px;
   margin: 0;
   justify-self: center;
+  transition: all 180ms ease-in-out;
 }
 .Photos img {
   border-radius: 4px;
@@ -19,6 +20,10 @@
   width: 100%;
 }
 
+.Photos figure:hover {
+  transform: scale(1.08);
+  filter: saturate(45%);
+}
 @media (max-width: 768px) {
   .Photos {
     margin-top: 36px;

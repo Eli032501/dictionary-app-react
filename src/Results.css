@@ -15,7 +15,11 @@
 .Results div.line-decoration {
   border-bottom: solid 1.5px #11a176;
 }
-
+.Results .group-phonetic {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
 .Results .Meaning h3 {
   font-family: "Kameron", serif;
   font-weight: 400;
@@ -67,5 +71,8 @@ li::marker {
 @media (max-width: 768px) {
   .Results h2 {
     text-align: start;
+  }
+  .Results .group-phonetic {
+    justify-content: start;
   }
 }
