@@ -20,11 +20,12 @@ span.Phonetics a:hover {
 
 @media (max-width: 576px) {
   span.Phonetics a {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 @media (max-width: 768px) {
   span.Phonetics {
-    float: inline-start;
+    justify-content: start;
+    margin-left: 4px;
   }
 }

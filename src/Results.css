@@ -48,11 +48,20 @@ li::marker {
 @media (max-width: 576px) {
   .Results h1,
   .Results h2 {
-    font-size: 52px;
+    font-size: 50px;
     text-align: center;
+  }
+  .Results .Meaning h3 {
+    font-size: 18px;
   }
   .Results .text-intro {
     font-size: 14px;
+  }
+  .Results .Meaning .container-definition li.definition {
+    font-size: 13px;
+  }
+  .Results .Meaning .container-definition p.example {
+    font-size: 12px;
   }
 }
 @media (max-width: 768px) {

@@ -6,7 +6,7 @@ import Phonetics from "./Phonetics";
 export default function Results({ results }) {
   if (results) {
     return (
-      <div className="Results col-12 col-md-7">
+      <div className="Results col-12 col-md-6">
         <div className=" line-decoration">
           <h2 className="">{results.word}</h2>
           {results.phonetics.map(function (phonetic, index) {

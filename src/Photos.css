@@ -1,3 +1,37 @@
 .Photos {
   margin-top: 120px;
+  display: grid;
+  padding-left: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  justify-content: center;
+}
+.Photos figure {
+  max-width: 200px;
+  margin: 0;
+  justify-self: center;
+}
+.Photos img {
+  border-radius: 4px;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .Photos {
+    margin-top: 36px;
+  }
+  .Photos figure {
+    max-width: 300px;
+  }
+}
+@media (max-width: 576px) {
+  .Photos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .Photos figure {
+    max-width: 450px;
+  }
 }
