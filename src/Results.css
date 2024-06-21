@@ -19,7 +19,9 @@
   display: flex;
   flex-direction: row;
   justify-content: end;
+  margin-bottom: 4px;
 }
+
 .Results .Meaning h3 {
   font-family: "Kameron", serif;
   font-weight: 400;
@@ -50,10 +52,13 @@ li::marker {
   font-size: 15px;
 }
 @media (max-width: 576px) {
-  .Results h1,
+  .Results h1 {
+    font-size: 52px;
+  }
   .Results h2 {
     font-size: 50px;
     text-align: center;
+    margin-top: 20px;
   }
   .Results .Meaning h3 {
     font-size: 18px;
@@ -71,6 +76,7 @@ li::marker {
 @media (max-width: 768px) {
   .Results h2 {
     text-align: start;
+    margin-top: 28px;
   }
   .Results .group-phonetic {
     justify-content: start;

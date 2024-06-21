@@ -33,9 +33,9 @@ export default function Results({ results }) {
     );
   } else {
     return (
-      <div className="Results d-flex justify-content-center">
+      <div className="Results d-flex justify-content-center mt-4">
         <div>
-          <h1>Dictionary</h1>
+          <h1 className="">Dictionary</h1>
           <p className="text-intro">what word do you want to look up?</p>
         </div>
       </div>

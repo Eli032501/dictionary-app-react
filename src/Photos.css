@@ -10,6 +10,9 @@
 .Photos figure {
   max-width: 200px;
   margin: 0;
+  border-radius: 4px;
+  box-shadow: -1px 1px 4px rgba(4, 53, 38, 0.102);
+
   justify-self: center;
   transition: all 180ms ease-in-out;
 }
@@ -23,6 +26,7 @@
 .Photos figure:hover {
   transform: scale(1.08);
   filter: saturate(45%);
+  box-shadow: none;
 }
 @media (max-width: 768px) {
   .Photos {
@@ -38,5 +42,10 @@
   }
   .Photos figure {
     max-width: 450px;
+  }
+}
+@media (min-width: 768px) {
+  .Photos {
+    max-height: 180vh;
   }
 }

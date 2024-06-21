@@ -5,10 +5,10 @@ import Photos from "./Photos";
 
 import "./Dictionary.css";
 
-export default function Dictionary({ defaultWord }) {
-  let [word, setWord] = useState(defaultWord);
+export default function Dictionary() {
+  let [word, setWord] = useState(" ");
   let [results, setResults] = useState(null);
-  let [loaded, setLoaded] = useState(false);
+
   let [photos, setPhotos] = useState(null);
 
   function handleImageResponse(response) {
@@ -40,37 +40,20 @@ export default function Dictionary({ defaultWord }) {
     setWord(event.target.value);
   }
 
-  function load() {
-    setLoaded(true);
-    search();
-  }
-
-  if (loaded) {
-    return (
-      <div className="Dictionary">
-        <form className="  " onSubmit={handleSubmit}>
-          <div className="d-none d-sm-block  col-sm-6 col-md-8"></div>
-          <div className="col col-sm-6 col-md-4 row justify-content-between">
-            <input
-              className=" bar-search"
-              type="text"
-              defaultValue={defaultWord}
-              onChange={handleUpdate}
-            />
-            <input className=" btn-submit" type="submit" value="search" />
-            <div className="hints-search">
-              words suggested: destiny, sick, animal
-            </div>
-          </div>
-        </form>
-        <div className="row ">
-          <Results results={results} />
-          <Photos photos={photos} />
+  return (
+    <div className="Dictionary">
+      <form className="  " onSubmit={handleSubmit}>
+        <div className="d-none d-sm-block  col-sm-6 col-md-8"></div>
+        <div className="col col-sm-6 col-md-4 row justify-content-between">
+          <input className=" bar-search" type="text" onChange={handleUpdate} />
+          <input className=" btn-submit" type="submit" value="search" />
+          <div className="hints-search">words suggested: lot, sick, animal</div>
         </div>
+      </form>
+      <div className="row ">
+        <Results results={results} />
+        <Photos photos={photos} />
       </div>
-    );
-  } else {
-    load();
-    return "Loading...";
-  }
+    </div>
+  );
 }
